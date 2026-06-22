@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-1: #7B2CBF;
+  --color-brand-2: #8E2DE2;
+  --color-brand-3: #B832C5;
+  --color-brand-4: #D633B6;
+  --color-brand-5: #F048A8;
+  --color-brand-purple: #7B2CBF;
+  --color-brand-pink: #F048A8;
+  --color-bg-sec-1: #F7F4FA;
+  --color-bg-sec-2: #FAF8FC;
+  --color-text-main: #111827;
+  --color-text-sub: #374151;
+  --color-text-muted: #6B7280;
+  
+  --font-sans: 'Inter', 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-heading: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+
+  --shadow-premium: 0 20px 60px rgba(123, 44, 191, 0.08);
+  --shadow-premium-hover: 0 30px 70px rgba(123, 44, 191, 0.15);
+  --shadow-glow: 0 0 40px rgba(123, 44, 191, 0.15);
+  
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-glow: pulse-glow 2s ease-in-out infinite;
+  --animate-dash-scroll: dash-scroll 20s linear infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  @keyframes pulse-glow {
+    0%, 100% {
+      transform: scale(1);
+      box-shadow: 0 0 15px rgba(123, 44, 191, 0.3);
+    }
+    50% {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(240, 72, 168, 0.5);
+    }
+  }
+  @keyframes dash-scroll {
+    from {
+      stroke-dashoffset: 40;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F4FA;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(123, 44, 191, 0.2);
+  border-radius: 9999px;
+  border: 2px solid #F7F4FA;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(123, 44, 191, 0.4);
+}
+
+/* Smooth Scrolling & Basic Resets */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FFFFFF;
+  color: var(--color-text-main);
+  overflow-x: hidden;
+}
+
+/* Glassmorphism utility classes */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(123, 44, 191, 0.12);
+}
+
+.glass-dark {
+  background: rgba(17, 24, 39, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.text-gradient {
+  display: inline-block;
+  background-image: 
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.01 0.08' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.4'/%3E%3C/svg%3E"),
+    linear-gradient(135deg, #FF1880 0%, #B623CE 50%, #4B30F0 100%);
+  background-size: cover;
+  background-blend-mode: overlay;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.bg-gradient-brand {
+  background: linear-gradient(135deg, #FF1880 0%, #B623CE 50%, #4B30F0 100%);
+}
+
+.bg-gradient-soft {
+  background: linear-gradient(135deg, #FAF8FC 0%, #F7F4FA 100%);
+}
+
+.border-accent {
+  border-color: rgba(123, 44, 191, 0.12);
+}
+
+/* ============================
+   Accessibility — Focus Visible
+   Provides clear keyboard focus
+   indicators for all interactive
+   elements without affecting
+   mouse users.
+   ============================ */
+:focus-visible {
+  outline: 2px solid rgba(123, 44, 191, 0.7);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* Suppress outline for mouse/touch interactions */
+:focus:not(:focus-visible) {
+  outline: none;
+}

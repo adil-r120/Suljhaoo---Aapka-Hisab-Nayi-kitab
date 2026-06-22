@@ -1,0 +1,20 @@
+<svg viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Rounded Square with Pink-to-Purple Diagonal Gradient -->
+  <rect x="0" y="0" width="68" height="68" rx="20" fill="url(#logoGradient)" />
+  
+  <!-- Hand-drawn vector path for bold rounded S -->
+  <path d="M 47 23 C 47 16, 21 16, 21 25 C 21 34, 47 34, 47 43 C 47 52, 21 52, 21 45" 
+        stroke="#FFFFFF" 
+        stroke-width="11" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" 
+        fill="none" />
+  
+  <defs>
+    <linearGradient id="logoGradient" x1="0" y1="0" x2="68" y2="68" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF1880" />
+      <stop offset="50%" stop-color="#B623CE" />
+      <stop offset="100%" stop-color="#4B30F0" />
+    </linearGradient>
+  </defs>
+</svg>
