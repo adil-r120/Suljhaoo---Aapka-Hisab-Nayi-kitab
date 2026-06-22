@@ -190,13 +190,13 @@ export const Hero: React.FC = () => {
             </div>
 
             {/* Headline */}
-            <h1 className="font-heading font-extrabold text-[32px] leading-[1.15] sm:text-5xl lg:text-6xl text-slate-700 sm:leading-tight tracking-tight">
+            <h1 className="font-heading font-extrabold text-[32px] leading-[1.15] md:text-4xl lg:text-6xl text-slate-700 md:leading-tight tracking-tight">
               Dukaan Ki Har Uljhan Ka Hal <br />
               <span className="text-gradient">Suljhaoo</span>
             </h1>
 
             {/* Description */}
-            <p className="text-gray-600 text-lg sm:text-xl leading-relaxed max-w-xl">
+            <p className="text-gray-600 text-base md:text-lg lg:text-xl leading-relaxed max-w-xl">
               The ultimate store management platform. Record sales, track inventory, manage customer credit (Udhar), and share bills on WhatsApp automatically. 100% Offline-friendly.
             </p>
 
@@ -206,7 +206,7 @@ export const Hero: React.FC = () => {
               <MagneticWrapper>
                 <motion.a
                   href="#download"
-                  className="bg-gradient-brand text-white font-bold px-8 py-4 rounded-2xl flex items-center justify-center gap-2 shadow-xl shadow-brand-purple/20 hover:shadow-brand-purple/35 transition-all group"
+                  className="bg-gradient-brand text-white font-bold text-sm lg:text-base px-6 py-3 lg:px-8 lg:py-4 rounded-2xl flex items-center justify-center gap-2 shadow-xl shadow-brand-purple/20 hover:shadow-brand-purple/35 transition-all group"
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
                 >
@@ -219,7 +219,7 @@ export const Hero: React.FC = () => {
               <MagneticWrapper>
                 <motion.button
                   onClick={handlePlayDemo}
-                  className="glass border border-brand-purple/12 text-gray-800 font-bold px-8 py-4 rounded-2xl flex items-center justify-center gap-2 hover:bg-white/90 shadow-sm transition-all"
+                  className="glass border border-brand-purple/12 text-gray-800 font-bold text-sm lg:text-base px-6 py-3 lg:px-8 lg:py-4 rounded-2xl flex items-center justify-center gap-2 hover:bg-white/90 shadow-sm transition-all"
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
                 >

@@ -73,10 +73,10 @@ export const ProblemSection: React.FC = () => {
             <span className="w-1.5 h-1.5 rounded-full bg-brand-pink animate-pulse" />
             <span className="text-xs font-bold text-brand-pink tracking-wider uppercase">Problem vs. Solution</span>
           </div>
-          <h2 className="font-heading font-extrabold text-3xl sm:text-4xl text-gray-900 tracking-tight">
+          <h2 className="font-heading font-extrabold text-3xl md:text-2xl lg:text-4xl text-gray-900 tracking-tight">
             Stop Straining Your Business With <span className="text-gradient">Old Methods</span>
           </h2>
-          <p className="text-gray-500 text-base sm:text-lg mt-3">
+          <p className="text-gray-500 text-base md:text-sm lg:text-lg mt-3">
             See how upgrading to a digital store manager turns shopkeeping hurdles into smooth growth.
           </p>
         </div>

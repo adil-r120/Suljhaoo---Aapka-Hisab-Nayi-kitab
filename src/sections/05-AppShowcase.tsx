@@ -42,11 +42,11 @@ export const AppShowcase: React.FC = () => {
               <span className="text-xs font-bold text-brand-pink tracking-wider uppercase">Multi-Platform Sync</span>
             </div>
             
-            <h2 className="font-heading font-extrabold text-3xl sm:text-4xl text-gray-900 leading-tight">
+            <h2 className="font-heading font-extrabold text-3xl md:text-2xl lg:text-4xl text-gray-900 leading-tight">
               Manage From Your <span className="text-gradient">Phone, Tablet, or PC</span>
             </h2>
             
-            <p className="text-gray-500 text-base sm:text-lg leading-relaxed">
+            <p className="text-gray-500 text-base md:text-sm lg:text-lg leading-relaxed">
               Your business is always in your pocket. Register sales on your phone while walking around, and view advanced analytics on a tablet/desktop at the end of the day. Data syncs instantly across all devices.
             </p>
 
