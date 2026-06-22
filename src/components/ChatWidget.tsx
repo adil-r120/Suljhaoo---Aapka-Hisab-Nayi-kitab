@@ -42,7 +42,7 @@ export const ChatWidget: React.FC = () => {
 
     // User message
     const userMsg: Message = {
-      id: Date.now().toString(),
+      id: crypto.randomUUID(),
       sender: 'user',
       text,
       timestamp: new Date(),
