@@ -37,7 +37,7 @@ export const Logo: React.FC<LogoProps> = ({
           whileHover={interactive ? { scale: 1.05 } : undefined}
           transition={{ duration: 0.3 }}
         >
-          <svg width="auto" height="100%" viewBox="0 0 400 80" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ minWidth: size * 4.5 }}>
+          <svg width="100%" height="100%" viewBox="0 0 400 80" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ minWidth: size * 4.5 }}>
             <style>{`
               @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
               .logo-text-inline-full {
