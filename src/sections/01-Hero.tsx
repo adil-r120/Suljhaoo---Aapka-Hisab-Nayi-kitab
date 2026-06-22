@@ -171,11 +171,11 @@ export const Hero: React.FC = () => {
       <HeroBackground />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-8 items-center">
           
           {/* Left Text Column */}
           <motion.div 
-            className="lg:col-span-6 flex flex-col space-y-6 text-left"
+            className="md:col-span-6 flex flex-col space-y-6 text-left"
             style={{ y: yLeft }}
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -248,7 +248,7 @@ export const Hero: React.FC = () => {
 
           {/* Right Visual Column */}
           <motion.div 
-            className="lg:col-span-6 relative flex justify-center items-center h-[420px] sm:h-[500px]"
+            className="md:col-span-6 relative flex justify-center items-center h-[420px] sm:h-[500px]"
             style={{ y: yRight }}
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}

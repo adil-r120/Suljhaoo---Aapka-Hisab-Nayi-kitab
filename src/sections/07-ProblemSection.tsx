@@ -83,7 +83,7 @@ export const ProblemSection: React.FC = () => {
 
         {/* Comparison Grid */}
         <motion.div 
-          className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch"
+          className="grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"

@@ -33,10 +33,10 @@ export const AppShowcase: React.FC = () => {
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-brand-pink/5 rounded-full blur-[150px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
           
           {/* Left Text details */}
-          <div className="lg:col-span-5 text-left space-y-6">
+          <div className="md:col-span-5 text-left space-y-6">
             <div className="inline-flex items-center gap-2 bg-brand-pink/5 border border-brand-pink/10 rounded-full px-3.5 py-1.5 w-fit">
               <span className="w-1.5 h-1.5 rounded-full bg-brand-pink animate-pulse" />
               <span className="text-xs font-bold text-brand-pink tracking-wider uppercase">Multi-Platform Sync</span>
@@ -94,7 +94,7 @@ export const AppShowcase: React.FC = () => {
           </div>
 
           {/* Right Mockup Showcase with 3D Mouse Tilt */}
-          <div className="lg:col-span-7 flex justify-center items-center">
+          <div className="md:col-span-7 flex justify-center items-center">
             <div 
               ref={containerRef}
               onMouseMove={handleMouseMove}
