@@ -21,7 +21,7 @@ Suljhaoo is a marketing landing page for India's premium kirana shop management 
 
 ---
 
-## 🏠 Live Sections
+## 🏠 Live Sections [https://suljhaoo.vercel.app/]
 
 | # | Section | Description |
 |---|---|---|
