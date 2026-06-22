@@ -31,8 +31,8 @@ export const Journey90Days: React.FC = () => {
     );
 
     // 2. Milestone card animations
-    const cards = gsap.utils.toArray(".milestone-card");
-    cards.forEach((card: HTMLElement) => {
+    const cards = gsap.utils.toArray(".milestone-card") as HTMLElement[];
+    cards.forEach((card) => {
       gsap.from(card, {
         opacity: 0,
         y: 50,
