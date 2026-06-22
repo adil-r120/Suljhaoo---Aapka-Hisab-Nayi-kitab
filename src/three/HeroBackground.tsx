@@ -90,7 +90,7 @@ const FloatingOrb: React.FC<OrbProps> = ({ color, position, speed, distort, size
 
   return (
     <mesh ref={mesh} position={position}>
-      <sphereGeometry args={[size, 64, 64]} />
+      <sphereGeometry args={[size, 32, 32]} />
       <MeshDistortMaterial
         color={color}
         distort={distort}
@@ -147,6 +147,7 @@ export const HeroBackground: React.FC = () => {
       {!prefersReducedMotion && (
         <Canvas
           camera={{ position: [0, 0, 5], fov: 60 }}
+          dpr={[1, 1.5]}
           gl={{ alpha: true, antialias: true, powerPreference: 'high-performance' }}
           className="w-full h-full"
         >
